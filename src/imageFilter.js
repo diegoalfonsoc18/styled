@@ -5,17 +5,17 @@ import otros from "./assets/images/otros.svg";
 import transporte from "./assets/images/transporte.svg";
 import utilidades from "./assets/images/utilidades.svg";
 
-import { Icono } from "./Components/UI";
+import { IconoTema } from "./Components/UI";
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default (type) => {
   const Images = {
-    Restaurante: <Icono src={alimentacion} alt="Restaurante" />,
-    Salud: <Icono src={salud} alt="Salud" />,
+    Restaurante: <IconoTema src={alimentacion} alt="Restaurante" />,
+    Salud: <IconoTema src={salud} alt="Salud" />,
 
-    Transporte: <Icono src={transporte} alt="Transporte" />,
-    Utilidades: <Icono src={utilidades} alt="Utilidades" />,
-    default: <Icono src={otros} alt="default" />,
+    Transporte: <IconoTema src={transporte} alt="Transporte" />,
+    Utilidades: <IconoTema src={utilidades} alt="Utilidades" />,
+    default: <IconoTema src={otros} alt="default" />,
   };
   return Images[type] || Images["default"];
 };
